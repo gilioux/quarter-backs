@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ConsoleAppSR\**" />
+    <Compile Remove="ConsoleAppTestUpload\**" />
+    <Compile Remove="obj\Pages\**" />
+    <Compile Remove="WebApplicationSR1\**" />
+    <Content Remove="ConsoleAppSR\**" />
+    <Content Remove="ConsoleAppTestUpload\**" />
+    <Content Remove="obj\Pages\**" />
+    <Content Remove="WebApplicationSR1\**" />
+    <EmbeddedResource Remove="ConsoleAppSR\**" />
+    <EmbeddedResource Remove="ConsoleAppTestUpload\**" />
+    <EmbeddedResource Remove="obj\Pages\**" />
+    <EmbeddedResource Remove="WebApplicationSR1\**" />
+    <None Remove="ConsoleAppSR\**" />
+    <None Remove="ConsoleAppTestUpload\**" />
+    <None Remove="obj\Pages\**" />
+    <None Remove="WebApplicationSR1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SignalRChat.zip" />
+    <None Remove="Startup.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.0-alpha1-final" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Http" Version="0.0.1-alpha" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Redis" Version="1.0.0-alpha1-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="node_modules\" />
+    <Folder Include="wwwroot\scripts\content\" />
+  </ItemGroup>
+
+</Project>

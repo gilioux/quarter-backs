@@ -1,0 +1,11 @@
+SignalRClientNodeJS/
+SignalRClientConsole/
+obj/
+bin/
+*.exe
+*.dll
+*.pdb
+*.runtimeconfig.dev.json
+*.csproj.nuget.cache
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
